@@ -96,9 +96,9 @@ fetch(
                   link_respository.href = repo.items[randomRepo].html_url;
                   info.innerHTML = `${repo.items[randomRepo].description}<br>`;
                   stars.innerHTML = `<img src="assets/star-svgrepo-com.svg" alt="stars"> ${repo.items[randomRepo].stargazers_count}<br>`;
-                  forks.innerHTML = `<img src="assets/fork-svgrepo-com.svg" alt="stars"> ${repo.items[randomRepo].forks_count}<br>`;
-                  issues.innerHTML = `<img src="assets/info-circle-svgrepo-com.svg" alt="stars"> ${repo.items[randomRepo].open_issues_count}<br>`;
-                  watch.innerHTML = `<img src="assets/watch-svgrepo-com.svg" alt="stars"> ${repo.items[randomRepo].watchers_count}<br>`;
+                  forks.innerHTML = `<img src="assets/fork-svgrepo-com.svg" alt="forks"> ${repo.items[randomRepo].forks_count}<br>`;
+                  issues.innerHTML = `<img src="assets/info-circle-svgrepo-com.svg" alt="issues"> ${repo.items[randomRepo].open_issues_count}<br>`;
+                  watch.innerHTML = `<img src="assets/watch-svgrepo-com.svg" alt="watch"> ${repo.items[randomRepo].watchers_count}<br>`;
                 }
               }, 1000);
             } catch (error) {
